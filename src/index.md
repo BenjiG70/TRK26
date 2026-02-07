@@ -9,17 +9,17 @@ url_mainfill: "/images/hero-bild.jpg"
         INFOS
     </div>
     <div class="info-content">
-        Am Wochenende vom 23. bis 24. Mai findet im Conne Island der zweite Leipziger Tierrechtskongress statt. Organisiert wird der Kongress wieder von „Vegan in Leipzig“, einem Kooperationsprojekt Leipziger Tierrechts- und Tierbefreiungsgruppen.
+Am Wochenende vom 23. bis 24. Mai 2026 findet im Hörsaalgebäude 1, Hörsaal Nord der Sportfakultät Uni Leipzig, der Leipziger Tierrechtskongress statt. Organisiert wird der Kongress von „Vegan in Leipzig“, einem Kooperationsprojekt Leipziger Tierrechts- und Tierbefreiungsgruppen.
 
-Dabei setzen sich erneut zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Aspekten der Tierrechtsarbeit auseinander. Dieses Mal wird es Vorträge zu Themen wie Tierschutzrecht, Speziesismus im Alltag sowie nachhaltige Ernährung aus feministischer Sicht und ein möglicher Ausstieg aus der Tierindustrie geben.
+Dabei setzen sich zahlreiche Referent*innen inhaltlich und kritisch mit verschiedenen Aspekten der Arbeit für Tierbefreiung und Tierrechte auseinander. Es wird Vorträge zu Tierrettung aus Krisengebieten, Tierethik, Ausstieg aus der Tierwirtschaft, antispeziesistische Arbeit im Bildungskontext und weiteren spannenden Themen geben.
 
-Nach intensiver Auseinandersetzung mit den Rückmeldungen und Wünschen zum ersten Leipziger Tierrechtskongress 2021, wird der Kongress in der zweiten Runde etwas entzerrter gestaltet sein und mehr Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referierenden bieten. Das Ziel bleibt weiterhin, vegan lebende Menschen und allgemein interessierte Personen zu vernetzen und gemeinsame Schnittmengen unterschiedlicher Gruppen und Bewegungen zu finden.
+Der Kongress wird neben den Vorträgen auch Zeit für informellen Austausch sowie Anschlussdiskussionen mit den Referent*innen bieten. Das Ziel des Kongresses ist, die Tierbewegung und interessierte Personen zu vernetzen sowie gemeinsame Schnittmengen und Herausforderungen aktivistischer Praxis zu diskutieren.
 
-Sowohl Samstag als auch Sonntag beginnt der Kongress um 12 Uhr mit dem ersten Vortrag. Zwischen den täglich 5 Vorträgen wird es viel Pausenzeit geben, die zum Beispiel im Garten bei Kaffee, Kuchen und anderen veganen Leckereien der „Feinkost Meißner“ verbracht werden können. Alle Vorträge werden auch per Lautsprecher im Garten zu hören sein. Im Anschluss an das offizielle Programm freuen sich die Veranstalter*innen auf regen Austausch mit allen Teilnehmenden und Interessierten im Conne Island.
+Sowohl Samstag als auch Sonntag beginnt der Kongress 10 Uhr mit dem ersten Vortrag. Zwischen den täglichen Vorträgen und der abschließenden Podiumsdiskussion wird es viel Pausenzeit geben, die bei Kaffee, Kuchen und anderen veganen Leckereien verbracht werden können. Im Anschluss an das offizielle Programm freuen sich die Veranstalter*innen auf regen Austausch mit allen Teilnehmenden und Interessierten.
 
-Im Außenbereich werden wieder viele örtliche Gruppen und Organisationen an Informationsständen über sich und ihre Arbeit im Tierrechtsbereich aufklären. Auch eigens bedruckte T-Shirts und andere Textilien werden zu erwerben sein.
+Im Außenbereich werden verschiedene örtliche Gruppen und Organisationen an Informationsständen über sich und ihre Arbeit (für die Tiere) aufklären.
 
-Eine Anmeldung zum Kongress ist nicht notwendig, auch sind derzeit keine Maßnahmen im Rahmen eines Hygienekonzeptes gegen das Corona-Virus zu erwarten. Der Eintritt bleibt kostenlos, Spenden sind freiwillig.
+Eine Anmeldung zum Kongress ist nicht notwendig, auch sind derzeit keine Maßnahmen im Rahmen eines Hygienekonzeptes gegen das Corona-Virus zu erwarten. Der Eintritt ist kostenlos, Spenden sind freiwillig.
     </div>
 </div>
 # 
