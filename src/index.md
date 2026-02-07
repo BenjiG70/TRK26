@@ -60,7 +60,7 @@ Die Programmübersicht entspricht dem aktuellen Planungsstand. Spätere Änderun
         <span class="badge-opt">vorverlegt auf Samstag 16:30 Uhr</span>
     </div>
     <div class="speaker-image">
-        <img src="/images/pic01.jpg" alt="Name des Speakers">
+        <img src="{{ '/images/pic01.jpg' | url }}" alt="name des speakers">
     </div>
     <div class="speaker-info">
         <h3 class="speaker-name">Vorname Nachname</h3>
@@ -76,7 +76,7 @@ Die Programmübersicht entspricht dem aktuellen Planungsstand. Spätere Änderun
         <span class="badge-opt">opt.</span>
     </div>
     <div class="speaker-image">
-        <img src="/images/pic01.jpg" alt="Name des Speakers">
+        <img src="{{ '/images/pic01.jpg' | url }}" alt="name des speakers">
     </div>
     <div class="speaker-info">
         <h3 class="speaker-name">Vorname Nachname</h3>
@@ -90,7 +90,7 @@ Die Programmübersicht entspricht dem aktuellen Planungsstand. Spätere Änderun
 #
 <div class="info-grid">
     <div class="info-label">
-        <img src="/images/pic06.jpg">
+        <img src="{{ '/images/pic06.jpg' | url }}">
     </div>
     <div class="info-content">
         <h1> Hartmut Kiewert </h1>
