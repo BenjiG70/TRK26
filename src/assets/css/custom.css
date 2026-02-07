@@ -1,0 +1,594 @@
+/* Custom Overrides für Vegan in Leipzig */
+    :root {
+        --primary-color: #33BD79; 
+        --secondary-color: #2BAC65; 
+        --background-color: #F8F8F8; 
+        --text-color: #000000;
+    }
+
+    body, html {
+        background-color: var(--background-color) !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    main, #main {
+        background-color: var(--background-color) !important;
+        width: 100%;
+        max-width: none; /* Hebt Breitenbeschränkungen auf, falls vorhanden */
+    }
+    /* 1. Alles radikal auf Weiß setzen */
+    html, body, #wrapper, #main, .main, #wrapper > .bg {
+        background-color: var(--background-color) !important;
+        background-image: none !important;
+        background-attachment: scroll !important;
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* 2. Den "is-preload" Effekt neutralisieren, falls er hängen bleibt */
+    body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+        transition: none !important;
+    }
+
+    /* 3. Alle Texte auf Schwarz setzen */
+    body, body * {
+        color: var(--text-color) !important;
+    }
+
+    footer, #footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: var(--primary-color) !important;
+        overflow: hidden;
+        margin-bottom: 0 !important;
+        padding-bottom: 2rem;
+        margin-top: auto;
+    }
+    /* icons */
+    .fa-solid, .fas, .fa-brands, .fab {
+        font-family: "Font Awesome 6 Free" !important;
+        font-weight: 900;
+    }
+
+    .fa-brands {
+        font-family: "Font Awesome 6 Brands" !important;
+    }
+    .icons-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        align-items: center;
+        margin-top: 2rem;
+        list-style: none;
+    }
+
+    .icons-row a {
+        font-size: 1.5rem;
+        color: var(--text-color);
+        transition: color 0.3s;
+    }
+
+    .icons-row a:hover {
+        color: var(--secondary-color);
+    }
+    .main-logo {
+        display: block;      /* Macht das Bild zum Block-Element */
+        margin-left: auto;   /* Schiebt von links zur Mitte */
+        margin-right: auto;  /* Schiebt von rechts zur Mitte */
+        max-width: 180px;
+        margin-bottom: 1rem;
+    }
+    .generic-section {
+        padding: 4rem;
+        background-color: var(--primary-color);
+        text-align: center;
+    }
+/* donation.njk */
+    /* Zentriert den gesamten Header-Bereich der Sektion */
+    #donation-section {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Optional: Falls Stellar spezifische Margins nutzt, die das Zentrieren verhindern */
+    #donation-section h1 {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block; /* Sorgt dafür, dass eventuelle Unterstriche mitzentriert werden */
+    }
+    #donation.main {
+        padding: 2rem 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    .donation-wrapper {
+        position: relative;
+        width: 100%;
+        /* Verhindert, dass das Theme den Container künstlich schmal hält */
+        margin: 0 auto;
+        display: block;
+    }
+
+    .donation-wrapper iframe {
+        width: 100% !important;
+        /* Wir nutzen vh (Viewport Height), um sicherzugehen, dass es groß ist */
+        height: 90vh !important; 
+        min-height: 800px !important;
+        border: 0;
+    }
+
+/* about.njk */
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr; /* Text breiter als Logos */
+        gap: 4rem;
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: var(--background-color); /* Standard Hintergrund Weiß */
+    }
+
+    .about-text h2 {
+        color: var(--text-color);
+        text-transform: uppercase;
+        border-bottom: 4px solid var(--primary-color);
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
+    .description p {
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+    }
+
+    .disclaimer {
+        font-size: 0.85rem;
+        color: var(--text-color-light);
+        font-style: italic;
+        border-left: 3px solid var(--primary-color);
+        padding-left: 1rem;
+    }
+    /* Container für die Partner-Logos */
+    .partner-logos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    /* Styling der Bilder innerhalb der Links */
+    .partner-logos a img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: none !important;
+        box-shadow: none !important;
+        transition: none !important;
+    }
+    /* Partner-Logos */
+    .partner-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .partner-grid img {
+        max-width: 80px;
+        filter: grayscale(100%); /* Stilvoll einheitlich */
+        transition: filter 0.3s;
+        opacity: 0.7;
+    }
+
+    .partner-grid img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+
+    /* Social Media Icons */
+    .social-connect {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: var(--background-color);
+    }
+    .social-connect h3{
+        display: grid;
+        color: var(--text-color);
+        text-transform: uppercase;
+        border-bottom: 4px solid var(--primary-color);
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+
+
+/* header.njk */
+    .header {
+        background-color: var(--background-color);
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center; /* Zentriert den Inhaltsbereich */
+    }
+
+    .header-container {
+        width: 100%;
+        max-width: 1200px; /* Oder der Wert deiner Stellar-Content-Breite */
+        margin: 0 auto;
+        padding: 0 20px;   /* Sicherheitsabstand zu den Rändern */
+    }
+
+    .header img {
+        max-width: 150px;
+        height: auto;
+        display: block; /* Verhindert Abstände unter dem Bild */
+    }
+
+    .filler {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;         /* Entfernt Lücken unter dem Bild */
+    }
+
+    .filler img {
+        width: 100vw;           /* Erzwingt volle Breite des Bildschirms */
+        height: auto;
+        object-fit: cover;      /* Sorgt dafür, dass es den Platz füllt */
+        display: block;
+        border-radius: 0;       /* Kantige Formsprache beibehalten  */
+    }
+
+
+
+
+/* congress.njk */
+    /* Quickinfos */
+    .info-line {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+
+    .info-line .icon {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Das Icon selbst bekommt die Farbe */
+    .info-line .icon::before {
+        color: var(--primary-color);
+        margin-right: 0.75rem;
+        font-size: 1.2rem;
+    }
+
+    /* Versteckt den Text-Label für Screenreader, falls gewünscht, 
+    oder du lässt ihn weg, wenn der Text dahinter steht */
+    .info-line .label {
+        display: none; 
+    }
+    /* Countdown */
+    .countdown-container {
+        display: flex;
+        flex-direction: column; /* Stapelt H1 über die Zahlen */
+        align-items: center;    /* Zentriert alles horizontal */
+        margin: 3rem 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .countdown-container h1 {
+        margin-bottom: 2rem;
+        color: var(--text-color);
+        text-align: center;
+        width: 100%;
+    }
+
+    .countdown-row {
+        display: flex;          /* Die Zahlen bleiben nebeneinander */
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;        /* Umbruch auf Handys */
+    }
+
+    .time-block {
+        background: var(--primary-color);
+        padding: 1rem;
+        border-radius: 8px;
+        min-width: 80px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .time-block span {
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .time-block label {
+        color: var(--background-color);
+        font-size: 0.7rem;
+        text-transform: uppercase;
+    }
+    /* Informationen */
+    .info-grid {
+        display: flex;
+        max-width: 1100px;
+        margin: 2rem auto;
+        border-top: 2px solid --background-color;
+        padding-top: 2rem;
+    }
+
+    .info-label {
+        flex: 0 0 25%; /* Exakt 1/4 der Breite */
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--text-color);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .info-content {
+        flex: 0 0 75%; /* Die restlichen 3/4 */
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .info-item {
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .info-item i {
+        color: var(--primary-color); /* Dein PVL-Grün */
+        margin-right: 15px;
+        width: 25px;
+        text-align: center;
+    }
+    .stats-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 3rem 0;
+        flex-wrap: wrap;
+    }
+
+    .stat-card {
+        background: var(--primary-color); /* Dunkler Hintergrund */
+        border-bottom: 5px solid var(--text-color); /* Akzentfarbe als Unterstreichung */
+        padding: 2rem;
+        border-radius: 12px;
+        min-width: 180px;
+        text-align: center;
+        position: relative;
+        transition: transform 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .stat-card:hover {
+        transform: translateY(-10px); /* Kleiner Animationseffekt */
+    }
+
+    .stat-number {
+        display: block;
+        font-size: 3.5rem;
+        font-weight: 900;
+        color: var(--primary-color); /* Zahlen in Gelb */
+        line-height: 1;
+    }
+
+    .stat-label {
+        display: block;
+        font-size: 1.1rem;
+        color: var(--background-color);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-top: 0.5rem;
+    }
+
+    .stat-card i {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.1); /* Dezent im Hintergrund */
+    }
+    .speaker-card {
+        display: flex;
+        background: var(--background-color);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        margin-bottom: 1.5rem;
+        position: relative;
+        border-left: 5px solid var(--primary-color);
+    }
+
+    .speaker-status {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .badge-opt {
+        background: var(--primary-color);
+        color: white;
+        padding: 2px 8px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        border-radius: 4px;
+        text-transform: uppercase;
+    }
+
+    .speaker-image {
+        flex: 0 0 120px;
+    }
+
+    .speaker-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .speaker-info {
+        padding: 1rem 1.5rem;
+        flex-grow: 1;
+    }
+
+    .speaker-name {
+        margin: 0;
+        font-size: 1.25rem;
+        color: var(--text-color);
+    }
+
+    .speaker-org {
+        display: block;
+        color: var(--primary-color);
+        font-style: italic;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .speaker-session {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .speaker-topic {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    details {
+    background: var(--background-color);
+    border: 2px solid var(--dark, #1a1a1a);
+    margin-bottom: 1rem;
+    padding: 0;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 800px; /* Optional: Begrenzung für bessere Lesbarkeit */
+}
+
+summary {
+    list-style: none; /* Entfernt den Standard-Pfeil */
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+}
+/* Container-Setup */
+.team-faq-container {
+    display: flex;
+    flex-direction: column; /* Handy: Alles untereinander */
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.faq-column, .team-column {
+    width: 100%;
+}
+
+/* Spezifische Anpassung für Team-Cards (etwas schlichter) */
+.team-member.speaker-card {
+    box-shadow: 5px 5px 0px var(--p-green); /* Grüner Schatten statt Gelb zur Unterscheidung */
+    margin-bottom: 1.5rem;
+}
+
+.team-member .speaker-info {
+    padding: 1.2rem;
+}
+
+/* Desktop Upgrade: Nebeneinander */
+@media (min-width: 768px) {
+    .team-faq-container {
+        flex-direction: row; /* Desktop: Nebeneinander */
+        align-items: flex-start;
+    }
+
+    .faq-column {
+        flex: 1.2; /* FAQ bekommt etwas mehr Platz */
+    }
+
+    .team-column {
+        flex: 1;
+    }
+}
+
+/* Chrome/Safari Pfeil-Entferner */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Ein eigener Pfeil oder ein Plus-Zeichen via After-Element */
+summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+/* Wenn ausgeklappt: */
+details[open] {
+    border-color: var(--p-green, var(--primary-color));
+}
+
+details[open] summary {
+    border-bottom: 2px solid var(--background-color);
+}
+
+details[open] summary::after {
+    content: '−';
+    transform: rotate(180deg);
+}
+
+.details-content {
+    padding: 1.5rem;
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+    /* Mobile Anpassung */
+    @media (max-width: 600px) {
+        .speaker-card { flex-direction: column; }
+        .speaker-image { height: 150px; flex: none; }
+    }
+
+    @media (max-width: 600px) {
+        .stat-card { width: 100%; }
+    }
+
+    /* Mobile Optimierung: Untereinander stapeln auf kleinen Screens */
+    @media (max-width: 768px) {
+        .info-grid {
+            flex-direction: column;
+        }
+        .info-label {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 4px solid --primary-color;
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .countdown-container { gap: 0.5rem; }
+        .time-block { min-width: 60px; padding: 0.5rem; }
+        .time-block span { font-size: 1.5rem; }
+    }

@@ -1,0 +1,127 @@
+---
+layout: layouts/base.njk
+---
+<div>
+{% set parts = content.split('#') %}
+<div>
+    <div class="info-line">
+        <span class="icon solid fa-clock"><span class="label">Zeit:</span>  23.-24.05.2026</span>
+        <span class="icon solid fa-map-pin"><span class="label">Ort:</span> Leipzig</span>
+        <span class="icon solid fa-coins"><span class="label">Ort:</span> Eintritt kostenlos</span>
+    </div>
+</div>
+<div class="countdown-container" id="countdown" data-date="2026-05-23T10:00:00">
+    <h1>Zeit bis zum Tierrechtskongress 2026</h1>
+    <div class="stats-container">
+        <div class="stat-card">
+            <span class="stat-number" id="days">00</span>
+            <span class="stat-label">Tage</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number" id="hours">00</span>
+            <span class="stat-label">Stunden</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number" id="minutes">00</span>
+            <span class="stat-label">Minuten</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number" id="seconds">00</span>
+            <span class="stat-label">Sekunden</span>
+        </div>
+    </div>
+</div>
+
+<div class="container single-post-container">
+        <article class="post-content">
+           {{ parts[0] | safe }}
+        </article>
+    </div>
+</div>
+
+{% include 'donate.njk' %}
+
+<div class="stats-container">
+    <div class="stat-card">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Tage</span>
+        <i class="fa-solid fa-calendar-check"></i>
+    </div>
+    <div class="stat-card">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Vorträge</span>
+        <i class="fa-solid fa-microphone-lines"></i>
+    </div>
+    <div class="stat-card">
+        <span class="stat-number">1</span>
+        <span class="stat-label">Freisitz</span>
+        <i class="fa-solid fa-sun"></i>
+    </div>
+</div>
+
+
+{{ parts[1] | safe }}
+
+<div class="stats-container">
+    <div class="stat-card">
+        <span class="stat-number">150</span>
+        <span class="stat-label">Sitzplätze im Saal</span>
+        <i class="fa-solid fa-calendar-check"></i>
+    </div>
+    <div class="stat-card">
+        <span class="stat-number">100</span>
+        <span class="stat-label">Freisitz Audiostream</span>
+        <i class="fa-solid fa-microphone-lines"></i>
+    </div>
+</div>
+
+{{ parts[2] | safe }}
+
+<div class="generic-section">
+    <h1> <strong>Rahmenprogramm <strong></h1>
+</div>
+
+{{ parts[3] | safe }}
+
+<div class="generic-section">
+    <h1> <strong> Fragen und Antworten zum Aufklappen <strong></h1>
+</div>
+
+{{ parts[4] | safe }}
+
+<div class="generic-section">
+    <h1> <strong> Sponsor*innen <strong></h1>
+</div>
+
+{{ parts[5] | safe }}
+
+
+<script>
+(function() {
+    const countdownEl = document.getElementById('countdown');
+    const targetDate = new Date(countdownEl.getAttribute('data-date')).getTime();
+
+    const updateCountdown = () => {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+            countdownEl.innerHTML = "<h3>Der Kongress hat begonnen!</h3>";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = days.toString().padStart(2, '0');
+        document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+    };
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Sofortiger Aufruf beim Laden
+})();
+</script>
